@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link type="text/css" rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    <!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clínica Veterinaria 🐾</title>
+  <!-- Bootstrap 5.3.0 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome 6.0 -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <!-- CSS personalizado -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-primary">
+  <div class="container">
+    <a class="navbar-brand" href="#">🐶 Clínica Veterinaria</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+        <li class="nav-item"><a class="nav-link" href="#equipo">Equipo</a></li>
+        <li class="nav-item"><a class="nav-link" href="#clientes">Clientes</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Inicio -->
+<header id="inicio" class="text-center">
+  <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee" class="img-fluid w-100 banner" alt="Veterinaria">
+  <div class="overlay">
+    <h1 class="display-4 text-white">Bienvenidos a nuestra Clínica 🐾🐕🐈</h1>
+    <p class="lead text-white">Cuidamos a tus mascotas con amor y profesionalismo.</p>
+    <a href="#contacto" class="btn btn-lg btn-warning">Agenda tu cita</a>
+  </div>
+</header>
+
+<!-- Servicios -->
+<section id="servicios" class="container py-5">
+  <h2 class="text-center mb-4">Nuestros Servicios</h2>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card shadow">
+        <img src="https://purina.com.do/sites/default/files/2022-10/purina-consulta-veterinaria-para-mascotas-lo-que-debes-saber.jpg" class="card-img-top" alt="Consulta">
+        <div class="card-body text-center">
+          <i class="fas fa-stethoscope fa-2x text-primary"></i>
+          <h5 class="card-title">Consulta General</h5>
+          <p>Atención médica integral para tus mascotas.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card shadow">
+        <img src="https://holavet.com.ar/wp-content/uploads/2022/04/close-up-on-veterinarian-taking-care-of-pet-1.webp" class="card-img-top" alt="Cirugías">
+        <div class="card-body text-center">
+          <i class="fas fa-syringe fa-2x text-primary"></i>
+          <h5 class="card-title">Cirugías</h5>
+          <p>Procedimientos quirúrgicos seguros y profesionales.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card shadow">
+        <img src="https://neozoo.com.ar/wp-content/uploads/2023/06/Iconos-e-imagenes-09.png" class="card-img-top" alt="Peluquería">
+        <div class="card-body text-center">
+          <i class="fas fa-cut fa-2x text-primary"></i>
+          <h5 class="card-title">Peluquería</h5>
+          <p>Estética y cuidado para tus mascotas.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Equipo -->
+<section id="equipo" class="bg-light py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Nuestro Equipo</h2>
+    <div class="row text-center">
+      <div class="col-md-4">
+        <img src="https://randomuser.me/api/portraits/women/45.jpg" class="rounded-circle mb-3 equipo-img" alt="Ana">
+        <h5>Dra. Ana López</h5>
+        <p>Especialista en medicina general.</p>
+      </div>
+      <div class="col-md-4">
+        <img src="https://randomuser.me/api/portraits/men/75.jpg" class="rounded-circle mb-3 equipo-img" alt="Carlos">
+        <h5>Dr. Carlos Méndez</h5>
+        <p>Cirujano veterinario.</p>
+      </div>
+      <div class="col-md-4">
+        <img src="https://randomuser.me/api/portraits/women/68.jpg" class="rounded-circle mb-3 equipo-img" alt="Laura">
+        <h5>Dra. Laura Gómez</h5>
+        <p>Especialista en estética animal.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Clientes -->
+<section id="clientes" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Lo que dicen nuestros clientes</h2>
+    <div id="carouselClientes" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <!-- Aquí se insertan dinámicamente las 10 cards desde JS -->
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselClientes" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselClientes" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- Contacto -->
+<section id="contacto" class="container py-5">
+  <h2 class="text-center mb-4">Contacto</h2>
+  <div class="card shadow text-center p-4">
+    <h3><i class="fas fa-phone"></i> +1 (809) 555-1234</h3>
+    <a href="https://wa.me/18095551234" class="btn btn-success my-3"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+    <form id="contactForm">
+      <div class="mb-3">
+        <input type="text" id="nombre" class="form-control" placeholder="Nombre" required>
+      </div>
+      <div class="mb-3">
+        <input type="email" id="email" class="form-control" placeholder="Email" required>
+      </div>
+      <div class="mb-3">
+        <textarea id="mensaje" class="form-control" placeholder="Mensaje" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-4">
+  <div class="mb-2">
+    <i class="fab fa-facebook fa-2x mx-2"></i>
+    <i class="fab fa-instagram fa-2x mx-2"></i>
+    <i class="fab fa-twitter fa-2x mx-2"></i>
+    <i class="fab fa-linkedin fa-2x mx-2"></i>
+    <i class="fab fa-youtube fa-2x mx-2"></i>
+  </div>
+  <p>Dirección: Santo Domingo, República Dominicana | Horario: Lunes a Viernes 9am - 6pm</p>
+</footer>
+
+<!-- Modal -->
+<div class="modal fade" id="modalConfirmacion" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header"><h5 class="modal-title">📧 Confirmación</h5></div>
+      <div class="modal-body">Tu
+
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
